@@ -10,12 +10,24 @@ import imgEducation from "@/assets/education.jpg";
 import imgDisability from "@/assets/disability.jpg";
 import imgWomen from "@/assets/women.jpg";
 import imgMedical from "@/assets/medical.jpg";
+import imgDogs from "@/assets/Screenshot 2026-06-23 172850.png";
+import imgHomeCare from "@/assets/Screenshot 2026-06-23 172659.png";
+import imgDisabledGirl from "@/assets/Screenshot 2026-06-23 174423.png";
+import imgSHG from "@/assets/WhatsApp Image 2026-06-23 at 12.12.19 PM.jpeg";
+import img16 from "@/assets/WhatsApp Image 2026-06-23 at 12.12.16 PM.jpeg";
+import img36 from "@/assets/WhatsApp Image 2026-06-23 at 12.12.36 PM.jpeg";
+import img18 from "@/assets/WhatsApp Image 2026-06-23 at 12.12.18 PM.jpeg";
+import img28 from "@/assets/WhatsApp Image 2026-06-23 at 12.12.28 PM.jpeg";
+import imgFoodDist from "@/assets/WhatsApp Image 2026-06-23 at 12.12.15 PM.jpeg";
+import imgEnvironment from "@/assets/WhatsApp Image 2026-06-23 at 12.12.13 PM.jpeg";
+import imgDisabledEssentials from "@/assets/WhatsApp Image 2026-06-23 at 12.12.15 PM (1).jpeg";
+import imgHealthCamp from "@/assets/WhatsApp Image 2026-06-23 at 12.12.22 PM.jpeg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "The Kanaka Durga Weaker Section Mahila Mandali — TKDWSMM" },
-      { name: "description", content: "An NGO in Narsaraopeta & Phirangipuram, Guntur — serving orphans, the elderly, people with disabilities, and women's empowerment since 1984." },
+      { name: "description", content: "An NGO in Phirangipuram, Guntur — serving orphans, the elderly, people with disabilities, and women's empowerment since 1984." },
       { property: "og:title", content: "The Kanaka Durga Weaker Section Mahila Mandali" },
       { property: "og:description", content: "Giving strength to the poor and voiceless — orphanage, old age care, education and disability support across Guntur, Andhra Pradesh." },
       { property: "og:type", content: "website" },
@@ -25,12 +37,17 @@ export const Route = createFileRoute("/")({
 });
 
 const services = [
-  { img: imgOrphanage, title: "Orphanage Care", desc: "Safe shelter, nutrition, schooling and a loving home for orphan children." },
-  { img: imgOldAge, title: "Old Age Home", desc: "Dignified care, medical attention and companionship for neglected elders." },
-  { img: imgEducation, title: "Education Support", desc: "Books, tuition, dropout prevention and career guidance for underprivileged students." },
-  { img: imgDisability, title: "Differently-Abled Care", desc: "Mobility aids, counselling and access to disability schemes for PWDs." },
-  { img: imgWomen, title: "Women Self-Help Groups", desc: "Savings, micro-loans and leadership development for rural women." },
-  { img: imgMedical, title: "Free Medical Camps", desc: "BP, sugar, TB screening and HIV/AIDS awareness in remote villages." },
+  { img: imgHomeCare, position: "object-top", title: "Home Care Services", desc: "Aged women are happy about our services! A dedicated 9-member team provides knee massages for elderly women, and bathing & feeding assistance for physically handicapped individuals." },
+  { img: imgDogs, position: "object-center", title: "Care of Voiceless Animals", desc: "Feeding and caring for street dogs to ensure they are well-nourished and safe." },
+  { img: img16, title: "Tailoring Training", desc: "1-year tailoring training program led by a professional trainer, and support to obtain free sewing machines from the government." },
+  { img: img36, title: "Clean Drinking Water", desc: "Providing funds and support to construct borewells, ensuring communities have access to safe drinking water." },
+  { img: imgHealthCamp, title: "Health Camps & Medical Support", desc: "Providing financial and nutritional assistance to HIV patients, along with regular health camps and hospital referrals for free eye operations." },
+  { img: img18, title: "Education Support", desc: "Providing school bags, books, tuition, and career guidance for underprivileged students to prevent dropouts." },
+  { img: imgDisabledGirl, position: "object-top", title: "Disabled Girl Child Home Care", desc: "Providing dedicated home-based care for disabled girl children, while offering women empowerment and employment opportunities for the caregivers." },
+  { img: imgSHG, title: "Women Self-Help Groups", desc: "Savings, micro-loans and leadership development for rural women." },
+  { img: imgFoodDist, title: "Monthly Food Distribution", desc: "Distributing rice bags every month to support nearly 152 needy families." },
+  { img: imgEnvironment, title: "Environmental Awareness", desc: "Providing social awareness on household waste disposal, digging rainwater harvesting pits, and making natural fertilizers for plants." },
+  { img: imgDisabledEssentials, title: "Essentials for the Disabled", desc: "Providing daily essentials, groceries, and necessary support specifically tailored for physically disabled individuals." },
 ];
 
 const activities = [
@@ -144,11 +161,19 @@ function Index() {
               <div className="mt-6 space-y-4">
                 <div>
                   <div className="text-xs uppercase tracking-wider opacity-80">President</div>
-                  <div className="text-xl font-semibold">Maram Gnana Prakash, M.S.W.</div>
+                  <div className="text-xl font-semibold">Maram Gnana Prakash</div>
                 </div>
                 <div>
-                  <div className="text-xs uppercase tracking-wider opacity-80">Coordinator</div>
-                  <div className="text-xl font-semibold">Nagendra</div>
+                  <div className="text-xs uppercase tracking-wider opacity-80">Women Coordinator</div>
+                  <div className="text-xl font-semibold">MIG Prasanna Kumari, M.Sc, M.Ed.</div>
+                </div>
+                <div>
+                  <div className="text-xs uppercase tracking-wider opacity-80">Board Member</div>
+                  <div className="text-xl font-semibold">M. Roopesh Bala, MBBS</div>
+                </div>
+                <div>
+                  <div className="text-xs uppercase tracking-wider opacity-80">Board Member</div>
+                  <div className="text-xl font-semibold">M. Keval Bala, MBBS</div>
                 </div>
               </div>
               <div className="mt-8 pt-6 border-t border-white/30 text-sm opacity-90">
@@ -168,10 +193,10 @@ function Index() {
             <p className="mt-4 text-foreground/70">Six focus areas where TKDWSMM works directly with families and individuals every week.</p>
           </div>
           <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map(({ img, title, desc }) => (
+            {services.map(({ img, title, desc, position }) => (
               <div key={title} className="group rounded-2xl bg-card border border-border overflow-hidden hover:-translate-y-1 transition-all" style={{ boxShadow: "var(--shadow-soft)" }}>
                 <div className="relative aspect-[4/3] overflow-hidden">
-                  <img src={img} alt={title} loading="lazy" width={1024} height={768} className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src={img} alt={title} loading="lazy" width={1024} height={768} className={`h-full w-full object-cover ${position || 'object-center'} group-hover:scale-105 transition-transform duration-500`} />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                 </div>
                 <div className="p-6">
@@ -233,7 +258,7 @@ function Index() {
             <ContactCard icon={MapPin} label="Central Office" lines={["D.No. 5-28, Maram Bazar", "Near BSNL Tower, Phirangipuram", "Guntur District – 522529, A.P."]} />
           </div>
           <div className="mt-10 rounded-2xl bg-card border border-border p-6 text-center text-sm text-muted-foreground" style={{ boxShadow: "var(--shadow-soft)" }}>
-            Service areas include <span className="font-semibold text-foreground">Narsaraopeta</span>, Phirangipuram and surrounding villages of Guntur District, Andhra Pradesh.
+            Service areas include <span className="font-semibold text-foreground">Phirangipuram</span> and surrounding villages of Guntur District, Andhra Pradesh.
           </div>
         </div>
       </section>
