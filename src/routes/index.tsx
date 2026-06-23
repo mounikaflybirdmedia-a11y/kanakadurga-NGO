@@ -3,7 +3,7 @@ import {
   Heart, Phone, Mail, MapPin, HandHeart, ArrowRight,
   Accessibility, Users, Sprout, ShieldCheck, Sun, Wheat, Leaf,
 } from "lucide-react";
-import logo from "@/assets/logo.png";
+const logo = "/logo.png";
 import imgOrphanage from "@/assets/orphanage.jpg";
 import imgOldAge from "@/assets/oldage.jpg";
 import imgEducation from "@/assets/education.jpg";
